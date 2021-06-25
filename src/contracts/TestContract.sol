@@ -1,9 +1,10 @@
 //SPDX-License-Identifier: MIT
-pragma solidity 0.6.6;
+pragma solidity ^0.6.0;
 
-import "./EIP712MetaTransaction.sol";
+// import "./EIP712MetaTransaction.sol";
+import "./BasicMetaTransaction.sol";
 
-contract TestContract is EIP712MetaTransaction("TestContract","1") {
+contract TestContract is BasicMetaTransaction {
 
     string public quote;
     address public owner;
